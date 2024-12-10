@@ -2,28 +2,69 @@ body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 
 header{
-    background-color: brown;
-    color: red;
+    background-color: #333;
+    color: white;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-section{
-    background-color: red;
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdfba;
+}
+
+.lh-text{
+    color: white;
+}
+
+.lh-home-div{
+    background-color: #fff;
     margin: 20px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: brown;
+.lh-about-div{
+    background-color: wheat;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px  ;
 }
 
-p{
-    color:black;
+h1{
+    color: darkcyan;
+}
+
+.lh-home-h{
+    color: darkcyan;
+}
+
+.lh-home-p{
+    color: darkcyan;
 }
