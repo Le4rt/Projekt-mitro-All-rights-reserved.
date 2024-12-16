@@ -1,0 +1,99 @@
+/*Stilimi i body*/
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    color: #333;
+}
+/*Stilit i header */
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0,3s ease;
+}
+
+nav a:hover {
+    background-color:#333;
+    color: #ffdfba;
+}
+
+.lh-home-div, .lh-about-div{
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+/*Stilimi i textit*/
+.lh-home-h, .lh-home-p{
+    color: darkcyan;
+}
+
+.lh-home-text{
+    color: white;
+}
+
+footer{
+    background-color: #333;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.lh-footer-home{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lh-footer-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.lh-footer-nav li {
+    margin: 0 15px;
+}
+
+.lh-footer-nav li a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.lh-footer-nav li a:hover {
+    color: #ffdfba;
+}
