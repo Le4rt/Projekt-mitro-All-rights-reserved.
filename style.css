@@ -1,8 +1,21 @@
-body{
+* {
+     box-sizing: border-box; 
+    }
+
+html body{
     font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    background-color: whitesmoke;    
+    line-height: 1.6;
+}
+
+body{
     margin: 0;
     padding: 0;
-    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header{
@@ -13,6 +26,11 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+main{
+    flex: 1;
+    padding: 20px;
 }
 
 nav ul{
@@ -31,10 +49,13 @@ nav a{
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav a:hover {
     color: #ffdfba;
+    background-color: #333;
 }
 
 .lh-text{
@@ -59,6 +80,7 @@ nav a:hover {
 
 h1{
     color: darkcyan;
+    margin-bottom: 20px;
 }
 
 .lh-home-h{
@@ -68,3 +90,59 @@ h1{
 .lh-home-p{
     color: darkcyan;
 }
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.lh-footer-div{
+    color: darkcyan;
+}
+
+@media (max-width: 768px) { 
+    nav ul {
+         flex-direction: column; 
+        } 
+    nav li { 
+         margin: 10px 0; } 
+}
+
+.lh-footer-div { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; /* Shtimi i hapësirës midis linkave */ 
+    margin-bottom: 10px; 
+} 
+
+.lh-footer-div a { 
+    color: darkcyan; 
+    text-decoration: none; 
+    font-size: 1.2em; /* Rritja e madhësisë së fontit për më shumë vizualitet */ 
+} 
+
+.lh-footer-div a:hover { 
+    color: #0056b3; 
+}
+
+.lh-nrtelefonit{
+    color: darkblue;
+}
+
+.lh-place-link{
+    color: darkcyan;
+    text-decoration: none;
+}
+
+.lh-place-link:hover {
+    text-decoration: underline;
+}
+
+
