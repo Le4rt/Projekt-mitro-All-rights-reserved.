@@ -23,14 +23,23 @@ header{
     color: white;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1000;
+    flex-shrink: 0;
+
 }
 
 main{
     flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    margin-top: 80px;
 }
 
 nav ul{
@@ -66,8 +75,14 @@ nav a:hover {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center; /* Qendërzimi i tekstit */
+    width: 80%; /* Gjerësia relative për qendërzim më të mirë */
+    max-width: 350px; /* Kufizimi maksimal i gjerësisë */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .lh-about-div{
@@ -78,6 +93,17 @@ nav a:hover {
     box-shadow: 0 0 10px  ;
 }
 
+.lh-home-div:hover {
+    transform: translateY(-10px); /* Lëviz kartën lart gjatë hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shto hijë gjatë hover */
+}
+
+.lh-place-img {
+    width: 100%; /* Foto mbulon plotësisht kartën */
+    height: 200px; /* Lartësia e fotos */
+    object-fit: cover; /* Ruan proporcione të mira për fotot */
+}
+
 h1{
     color: darkcyan;
     margin-bottom: 20px;
@@ -85,10 +111,25 @@ h1{
 
 .lh-home-h{
     color: darkcyan;
+    font-size: 1.5rem;
+    margin: 15px 0;
 }
 
-.lh-home-p{
+.lh-home-p {
+    color: #555;
+    padding: 0 15px 20px; /* Hapësirë rreth përshkrimit */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.lh-place-link {
     color: darkcyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lh-place-link:hover {
+    text-decoration: underline;
 }
 
 footer{
@@ -144,5 +185,24 @@ footer{
 .lh-place-link:hover {
     text-decoration: underline;
 }
+
+.lh-place1-main {
+    display: flex;
+    justify-content: center; /* Qëndro përmbajtjen horizontalisht */
+    align-items: center; /* Qëndro përmbajtjen vertikalisht */
+    height: 100vh; /* Lartësia e plotë e dritares së shfletuesit */
+    text-align: center; /* Qendro tekstin */
+    background-color: #f7f7f7; /* Ngjyrë e lehtë për sfondin */
+}
+
+.lh-place1-content {
+    max-width: 800px; /* Kufizo gjerësinë maksimale */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hijë për efekt */
+    text-align: center;
+}
+
 
 
