@@ -4,37 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peja - Best Places in Kosova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
-<body>
-    <header>
-        <h1 class="lh-home-text">Peja</h1>
+<body id="Projekt-mitro-All-rights-Reserved.">
+    <header class="bg-dark text-white py-4">
+        <h1>Peja</h1>
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="review.html"><i class="fas fa-star"></i> Review</a></li>
-            </ul>    
+            </ul>
         </nav>
     </header>
     <main>
         <div class="lh-home-div">
-            <h2 class="lh-home-h">Welcome to Peja</h2>
-            <p class="lh-home-p">Peja is known for its beautiful Rugova Gorge and stunning natural landscapes. Here, you can explore ...</p>
-            <!-- Add more detailed information about Peja -->
+            <div class="lh-place2-content">
+                <img src="images/Peja.jpg" alt="Peja" class="lh-place-img">
+                <section class="container my-4">
+                    <h1 class="display-4 text-center text-dark">Peja</h1>
+                    <p class="lead text-justify text-muted">
+                        Nestled at the foot of the Rugova Mountains, Peja is a natural paradise in western Kosovo. 
+                        It’s known for its breathtaking landscapes, outdoor activities, and cultural landmarks. 
+                        With Rugova Gorge and the Lumbardhi River nearby, Peja offers a perfect blend of adventure and tranquility.
+                    </p>
+                    <h3 class="h5 text-primary">
+                        <a href="place2.1.html" class="text-decoration-none text-primary">
+                            Places to Visit: Patriarchate of Peja
+                        </a>
+                    </h3>
+                    <p class="text-muted">
+                        The Patriarchate of Peja is a stunning Serbian Orthodox monastery dating back to the 13th century. 
+                        This UNESCO World Heritage Site features vibrant frescoes, ancient architecture, and a serene setting surrounded by nature. 
+                        It’s a spiritual and cultural hub that reflects the region’s diverse history.
+                    </p>
+                    <a href="place2.1.html" class="btn btn-primary">
+                        Learn More About Peja
+                    </a>
+                </section>
+                
+            </div>
         </div>
+        
+        <div class="container my-4">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div id="map" style="height: 600px; width: 100%; margin-top: 10px;"></div>
+                </div>
+            </div>
+        </div>
+        <div id="weather" class="weather-container">
+            <h4>Weather Information</h4>
+            <p id="weather-data">Loading...</p>
+        </div>
+        
     </main>
-    <footer>
-        <div class="lh-footer-div">
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        </div>
-        <div class="lh-nrtelefonit">
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center mb-2">
+                <a href="https://www.instagram.com/leart.hyseni.1/" class="mx-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557433893553" class="mx-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://x.com/hy5en1" class="mx-3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
             <p>Phone: +383 45 901 938</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

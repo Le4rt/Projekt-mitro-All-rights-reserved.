@@ -9,30 +9,82 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white py-4">
         <h1>Leave a Review</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="review.html"><i class="fas fa-star"></i> Review</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <div id="lh-place">
-            <h2>We Value Your Feedback</h2>
-            <form action="review.html" method="get">
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
-
-                <label for="review">Your Review:</label><br>
-                <textarea id="review" name="review" placeholder="Write your review here..." rows="5" required></textarea><br><br>
-
-                <button type="submit">Submit Review</button>
-            </form>
+    <main class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4 lh-main-title">We Value Your Feedback</h2>
+                    <form action="submit_review.html" method="post" class="bg-light p-4 rounded shadow lh-review-form">
+                        <div class="form-group">
+                            <label for="name" class="font-weight-bold lh-form-label">Your Name:</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-control lh-form-input" 
+                                placeholder="Enter your name" 
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="review" class="font-weight-bold lh-form-label">Your Review:</label>
+                            <textarea 
+                                id="review" 
+                                name="review" 
+                                class="form-control lh-form-input" 
+                                placeholder="Write your review here..." 
+                                rows="5" 
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold lh-form-label">Rate Us:</label>
+                            <div class="lh-star-rating d-flex align-items-center">
+                                <input type="radio" id="lh-star5" name="rating" value="5">
+                                <label for="lh-star5" title="5 stars"><i class="fas fa-star"></i></label>
+    
+                                <input type="radio" id="lh-star4" name="rating" value="4">
+                                <label for="lh-star4" title="4 stars"><i class="fas fa-star"></i></label>
+    
+                                <input type="radio" id="lh-star3" name="rating" value="3">
+                                <label for="lh-star3" title="3 stars"><i class="fas fa-star"></i></label>
+    
+                                <input type="radio" id="lh-star2" name="rating" value="2">
+                                <label for="lh-star2" title="2 stars"><i class="fas fa-star"></i></label>
+    
+                                <input type="radio" id="lh-star1" name="rating" value="1">
+                                <label for="lh-star1" title="1 star"><i class="fas fa-star"></i></label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                              <button type="submit" class="btn btn-primary btn-lg lh-submit-btn">
+                                <i class="fas fa-paper-plane"></i><a href="review.html">Submit Review</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <div class="lh-footer-div">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="review.html">Reviews</a>
+    
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center mb-2">
+                <a href="https://www.instagram.com/leart.hyseni.1/" class="mx-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557433893553" class="mx-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://x.com/hy5en1" class="mx-3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+            <p>Phone: +383 45 901 938</p>
         </div>
-        <p>&copy; 2025 Your Company. All rights reserved.</p>
     </footer>
 </body>
 </html>

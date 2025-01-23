@@ -4,46 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prishtina - Best Places in Kosova</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
-<body>
-    <header>
-        <h1 class="lh-home-text">Prishtina</h1>
+<body id="Projekt-mitro-All-rights-Reserved.">
+    <header class="bg-dark text-white py-4">
+        <h1>Prishtina</h1>
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
                 <li><a href="review.html"><i class="fas fa-star"></i> Review</a></li>
-            </ul>    
+            </ul>
         </nav>
     </header>
     <main class="lh-place1-main">
         <div class="lh-place1-content">
-            <img src="images/prishtina.jpg" alt="Prishtina" class="lh-place-img">
-            <p class="lh-home-p">Prishtina: The Vibrant Capital of Kosovo
-
-                Prishtina, the capital city of Kosovo, is a dynamic and modern place with a rich history. As the largest city in the country, it serves as the political, cultural, and economic heart of Kosovo. With a population of over 200,000, Prishtina is home to a diverse community, with people from different ethnic backgrounds, reflecting the city’s multicultural atmosphere.
-                
-                One of the highlights of Prishtina is its historical sites, such as the Newborn Monument, which symbolizes the birth of Kosovo as an independent country, and the Mother Teresa Square, named after the famous humanitarian. The Ethnological Museum and the Kosovo Museum offer a glimpse into the region's history, while the Imperial Mosque and Germia Park showcase the natural beauty and the cultural diversity of the area.
-                
-                Prishtina has a lively arts scene, with numerous art galleries, theaters, and music events taking place throughout the year. The city’s cafes and restaurants are always bustling, offering a wide range of delicious dishes, from local Kosovar specialties to international cuisines.
-                
-                For those interested in exploring the city's contemporary charm, the bustling streets of Bill Clinton Boulevard and the Sheshi Nena Tereza are filled with shops, bars, and vibrant street life, perfect for a leisurely stroll. The city's youthful energy is also reflected in its many universities and educational institutions, making Prishtina a hub for learning and innovation.
-                
-                Prishtina may be a relatively young city, but it is rapidly growing and evolving into an exciting destination for visitors from all over the world. Whether you're interested in history, culture, or just experiencing the vibrant life of the city, Prishtina has something for everyone.</p>
+            <img src="images/Prishtina.jpg" alt="Prishtina" class="lh-place-img">
+            <section class="container my-4">
+                <h1 class="display-4 text-center text-dark">Prishtina</h1>
+                <p class="lead text-justify text-muted">
+                    As the capital of Kosovo, Prishtina is a vibrant city filled with history, culture, and energy. 
+                    Known for its lively atmosphere, Prishtina has a blend of modern architecture and historical landmarks. 
+                    From bustling streets to tranquil parks, Prishtina is the heart of Kosovo.
+                </p>
+                <h3 class="h5 text-primary">
+                    <a href="place1.1.html" class="text-decoration-none text-primary">
+                        Places to Visit: Newborn Monument
+                    </a>
+                </h3>
+                <p class="text-muted">
+                    The Newborn Monument is one of the most iconic landmarks in Prishtina, symbolizing Kosovo’s independence. 
+                    This constantly changing monument is painted every year, showcasing the creativity and culture of the country. 
+                    It's a must-see spot for visitors to get a glimpse of Kosovo's spirit.
+                </p>
+                <a href="place1.1.html" class="btn btn-primary">
+                    Learn More About Prishtina
+                </a>
+            </section>
+             </div>
+             <div class="container my-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div id="map" style="height: 600px; width: 100%; margin-top: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        <div id="weather" class="weather-container">
+            <h4>Weather Information</h4>
+            <p id="weather-data">Loading...</p>
         </div>
+        
+        
     </main>
-    <footer>
-        <div class="lh-footer-div">
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        </div>
-        <div class="lh-nrtelefonit">
+    
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center mb-2">
+                <a href="https://www.instagram.com/leart.hyseni.1/" class="mx-3" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61557433893553" class="mx-3" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="https://x.com/hy5en1" class="mx-3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
             <p>Phone: +383 45 901 938</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
